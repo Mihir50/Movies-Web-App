@@ -25,7 +25,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Trending = () => {
+const HomePage = () => {
   const classes = useStyles();
 
   const [movies, setMovies] = useState([]);
@@ -140,4 +140,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default HomePage;

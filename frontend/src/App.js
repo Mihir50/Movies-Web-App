@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter, Switch, Route } from 'react-router-dom'; 
 
 import SearchBar from "./components/SearchBar/SearchBar";
-import Trending from "./components/Trending/Trending";
+import HomePage from "./components/Home/HomePage";
 import Header from "./components/Header/Header";
 import WatchList from "./components/WatchList/WatchList";
 import Watched from "./components/Watched/Watched";
@@ -20,7 +20,7 @@ export default function App() {
           <Scroll showBelow={250} />
           <Header />
           <Switch>
-            <Route exact path="/" component={Trending} />
+            <Route exact path="/" component={HomePage} />
             <Route exact path="/searchbar" component={SearchBar} />
             <Route exact path="/watchlist" component={WatchList} />
             <Route exact path="/watched" component={Watched} />
